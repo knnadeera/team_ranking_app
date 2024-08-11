@@ -96,8 +96,8 @@ const TeamRankingPage = () => {
               selectedFilterHandler(val);
             }}
           />
-          <Image src={partnerImg} alt="partner" className="w-100 mt-4"  />
-          <TeamRankingList />
+          <Image src={partnerImg} alt="partner" className="w-100 mt-4" />
+          <TeamRankingList date={`${year}-${month}-${day}`} />
         </div>
         <div className="col-2">
           <RightWidgets>

@@ -1,0 +1,20 @@
+.main {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.container .col-2,
+.container .col-8 {
+  flex-shrink: 0;
+//   max-width: calc(100% - 4rem);
+}
+
+@media (max-width: 1439px) {
+  .main {
+      width: 150%;
+  }
+  .container {
+    justify-content: center;
+    width: 1440px;
+  }
+}
