@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ITeamRank } from "../../../utils/interfaces/teamRank";
 import { Image } from "react-bootstrap";
 import "../../../utils/scss/teamRank.scss";
@@ -7,10 +7,16 @@ import PlayerCard from "./PlayerCard";
 
 interface IProp {
   rank: ITeamRank;
+  isOpen: boolean;
 }
 
-const TeamRank = ({ rank }: IProp) => {
+const TeamRank = ({ rank, isOpen }: IProp) => {
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(isOpen);
+  }, [isOpen]);
+
   return (
     <>
       <div className="team-rank">

@@ -25,7 +25,7 @@ const TeamRankingList = ({ date }: IProp) => {
       <div className="mt-3">
         {rankingDetails.map((rank: ITeamRank, index) => (
           <div key={index}>
-            <TeamRank rank={rank} />
+            <TeamRank rank={rank} isOpen={index === 0 ? true : false} />
           </div>
         ))}
       </div>
