@@ -1,17 +1,25 @@
 .main {
   overflow-x: auto;
-  width: 100%;
+    // width: 100%;
+  background-image: url("https://www.hltv.org/img/gj-rf9ubO1QqNDvBQHHKtM.png?ixlib=java-2.1.0&s=876d2d55ca96cd6b3c73ac56b978eb98");
+  background-size: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .container .col-2,
 .container .col-8 {
   flex-shrink: 0;
-//   max-width: calc(100% - 4rem);
+  //   max-width: calc(100% - 4rem);
+}
+
+.content {
+  background-color: #e5e7ea;
 }
 
 @media (max-width: 1439px) {
   .main {
-      width: 150%;
+    width: 150%;
   }
   .container {
     justify-content: center;
