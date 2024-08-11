@@ -1,0 +1,26 @@
+.ranking-filter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.ranking-filter .title {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  padding: 8px 0;
+}
+
+.ranking-filter .title:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  font-weight: bold;
+  color: #2d6da3;
+  border-bottom: #2d6da3 2px solid;
+}
+
+.ranking-filter .selected {
+  font-weight: bold;
+  color: #2d6da3;
+  border-bottom: #2d6da3 2px solid;
+}

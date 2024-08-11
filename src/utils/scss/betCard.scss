@@ -1,0 +1,63 @@
+.betCard {
+  background-image: url("https://www.hltv.org/img/HlpkfLgtLnDMd5XB9C77fe.png?ixlib=java-2.1.0&s=2f1915d1f7e1eacacfd752951fab06f2");
+  height: 280px;
+  width: 170px;
+  padding: 2.5rem 0.4rem;
+}
+
+.teamOdds {
+  background-color: #923a199e;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: small;
+  padding: 3px 0 5px 0;
+  height: 3.2rem;
+}
+
+.teamOdds:hover {
+  background-color: #923919b6;
+  cursor: pointer;
+}
+
+.teamName {
+  font-weight: bold;
+  font-size: small;
+}
+
+.odds {
+  background-color: rgb(78, 3, 3);
+  padding: 0 3px;
+  border-radius: 5px;
+  width: 90%;
+  text-align: center;
+}
+
+.betCardTeam2 {
+  margin-top: 4rem;
+}
+
+.betBtn {
+  background-color: #bc5d3a9e;
+  border: none;
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90%;
+}
+
+.betBtn:hover {
+  background-color: #bc5d3a;
+}
+
+.betBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

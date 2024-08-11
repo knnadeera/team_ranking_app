@@ -1,0 +1,44 @@
+.filters {
+  background-color: white;
+  width: 170px;
+  margin-top: 1rem;
+}
+
+.filters .title {
+  color: white;
+  background-color: #2d6da3;
+  font-weight: bold;
+  font-size: small;
+  padding: 0 4px;
+}
+
+.filter-drop {
+  cursor: pointer;
+  font-size: small;
+  color: rgb(146, 143, 143);
+}
+
+.filter-drop:hover {
+  color: #2d6da3;
+}
+
+.filter-drop-show {
+  font-weight: bold;
+  color: #2d6da3;
+}
+
+.drop-title {
+  padding: 0 4px;
+  border-bottom: 1px solid rgb(195, 195, 195);
+  background-color: aliceblue;
+}
+
+.drop-items {
+  border-bottom: 1px solid rgb(195, 195, 195);
+  padding: 4px 4px;
+}
+
+.active-drop-item {
+  font-weight: bold;
+  color: #2d6da3;
+}
