@@ -1,0 +1,19 @@
+.date-selector {
+  font-weight: bold;
+}
+
+.date-selector .arrow {
+  color: #E8B540;
+ width: 1.5rem;
+ height: 1.5rem;
+}
+.teamRanking-Header {
+  color: #E8B540;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.date-selector .arrow:hover {
+  background-color: rgba(255, 255, 255, 0.854);
+  cursor: pointer;
+}

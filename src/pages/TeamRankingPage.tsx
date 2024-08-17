@@ -9,7 +9,7 @@ import { months } from "../utils/enumsNModals/filers";
 import RankingFilter from "../components/teamRanking/centerWidgets/RankingFilter";
 import partnerImg from "../assets/images/TjraHuDQ-yp57zA3xG7JFZ.webp";
 import "../utils/scss/teamRanking.scss";
-import TeamRankingList from "../components/teamRanking/centerWidgets/TeamRankingList";
+import TeamRankingList from "../components/teamRanking/centerWidgets/TeamRankingList/TeamRankingList";
 import { rankingFilterBtnsData } from "../utils/enumsNModals/teamRanking";
 import { Image } from "react-bootstrap";
 
@@ -77,31 +77,31 @@ const TeamRankingPage = () => {
       <div className="row">
         <div className="col-2">
           <LeftWidgets>
-            <BetCard />
-            <Filters
+            {/* <BetCard /> */}
+            {/* <Filters
               year={selectedYear}
               month={selectedMonth}
               day={selectedDay}
               setYear={(val) => selectedYearHandler(val)}
               setMonth={(val) => selectedMonthHandler(val)}
               setDay={(val) => selectedDayHandler(val)}
-            />
+            /> */}
           </LeftWidgets>
         </div>
         <div className="col-8 center">
-          <RankingFilter
+          {/* <RankingFilter
             data={rankingFilterBtnsData}
             selected={selectedRanking}
             onClick={(val) => {
               selectedFilterHandler(val);
             }}
-          />
-          <Image src={partnerImg} alt="partner" className="w-100 mt-4" />
+          /> */}
+          {/* <Image src={partnerImg} alt="partner" className="w-100 mt-4" /> */}
           <TeamRankingList date={`${year}-${month}-${day}`} />
         </div>
         <div className="col-2">
           <RightWidgets>
-            <div>jfjdjhfj</div>
+            <div>Recent Activity</div>
           </RightWidgets>
         </div>
       </div>

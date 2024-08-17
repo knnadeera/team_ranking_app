@@ -1,10 +1,11 @@
 .main {
   overflow-x: auto;
     // width: 100%;
-  background-image: url("https://www.hltv.org/img/gj-rf9ubO1QqNDvBQHHKtM.png?ixlib=java-2.1.0&s=876d2d55ca96cd6b3c73ac56b978eb98");
+  background-image: url('../../../public/valorant.webp');
   background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #0F1923;
 }
 
 .container .col-2,
@@ -14,7 +15,7 @@
 }
 
 .content {
-  background-color: #e5e7ea;
+  background-color: #13151A;
 }
 
 @media (max-width: 1439px) {

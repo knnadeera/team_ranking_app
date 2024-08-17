@@ -6,10 +6,10 @@ export enum ENavIds {
   RESULTS = "Results",
   EVENTS = "Events",
   STATS = "Stats",
-  FANTASY = "Fantasy",
-  FORUM = "Forum",
+  // FANTASY = "Fantasy",
+  // FORUM = "Forum",
   MEDIA = "Media",
-  BETTING = "Betting",
+  // BETTING = "Betting",
   LIVE = "live",
 }
 
@@ -44,41 +44,41 @@ export const menuItems: INavbar[] = [
       { title: "map", id: "map", url: "/stats/map" },
     ],
   },
-  {
-    title: ENavIds.FANTASY,
-    id: ENavIds.FANTASY,
-    subMenu: [
-      {
-        title: "Fantasy overview",
-        id: "Fantasy overview",
-        url: "/fantasy/fantasy-overview",
-      },
-      {
-        title: "IEM Cologne 2024 Play-in",
-        id: "IEM Cologne 2024 Play-in",
-        url: "/fantasy/iem-cologne-2024-play-in",
-      },
-      {
-        title: "IEM Cologne 2024 - Group",
-        id: "IEM Cologne 2024 - Group",
-        url: "/fantasy/iem-cologne-2024-group",
-      },
-    ],
-  },
-  {
-    title: ENavIds.FORUM,
-    id: ENavIds.FORUM,
-    subMenu: [
-      { title: "All forums", id: "All forums", url: "/forum/all-forums" },
-      {
-        title: "Counter-Strike",
-        id: "Counter-Strike",
-        url: "/forum/counter-strike",
-      },
-      { title: "Fantasy", id: "Fantasy", url: "/forum/fantasy" },
-      { title: "Betting", id: "Betting", url: "/forum/betting" },
-    ],
-  },
+  // {
+  //   title: ENavIds.FANTASY,
+  //   id: ENavIds.FANTASY,
+  //   subMenu: [
+  //     {
+  //       title: "Fantasy overview",
+  //       id: "Fantasy overview",
+  //       url: "/fantasy/fantasy-overview",
+  //     },
+  //     {
+  //       title: "IEM Cologne 2024 Play-in",
+  //       id: "IEM Cologne 2024 Play-in",
+  //       url: "/fantasy/iem-cologne-2024-play-in",
+  //     },
+  //     {
+  //       title: "IEM Cologne 2024 - Group",
+  //       id: "IEM Cologne 2024 - Group",
+  //       url: "/fantasy/iem-cologne-2024-group",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: ENavIds.FORUM,
+  //   id: ENavIds.FORUM,
+  //   subMenu: [
+  //     { title: "All forums", id: "All forums", url: "/forum/all-forums" },
+  //     {
+  //       title: "Counter-Strike",
+  //       id: "Counter-Strike",
+  //       url: "/forum/counter-strike",
+  //     },
+  //     { title: "Fantasy", id: "Fantasy", url: "/forum/fantasy" },
+  //     { title: "Betting", id: "Betting", url: "/forum/betting" },
+  //   ],
+  // },
   {
     title: ENavIds.MEDIA,
     id: ENavIds.MEDIA,
@@ -91,26 +91,26 @@ export const menuItems: INavbar[] = [
       { title: "Galleries", id: "Galleries", url: "/media/galleries" },
     ],
   },
-  {
-    title: ENavIds.BETTING,
-    id: ENavIds.BETTING,
-    subMenu: [
-      {
-        title: "Betting analytics",
-        id: "Betting analytics",
-        url: "/betting/betting-analytics",
-      },
-      {
-        title: "Compare odds",
-        id: "Compare odds",
-        url: "/betting/compare-odds",
-      },
-      {
-        title: "Betting site",
-        id: "Betting site",
-        url: "/betting/betting-site",
-      },
-    ],
-  },
+  // {
+  //   title: ENavIds.BETTING,
+  //   id: ENavIds.BETTING,
+  //   subMenu: [
+  //     {
+  //       title: "Betting analytics",
+  //       id: "Betting analytics",
+  //       url: "/betting/betting-analytics",
+  //     },
+  //     {
+  //       title: "Compare odds",
+  //       id: "Compare odds",
+  //       url: "/betting/compare-odds",
+  //     },
+  //     {
+  //       title: "Betting site",
+  //       id: "Betting site",
+  //       url: "/betting/betting-site",
+  //     },
+  //   ],
+  // },
   { title: ENavIds.LIVE, id: ENavIds.LIVE, url: "/live" },
 ];
