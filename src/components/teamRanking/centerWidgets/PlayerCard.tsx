@@ -1,5 +1,5 @@
 import React from "react";
-import { IPlayer } from "../../../utils/interfaces/teamRank";
+import { IPlayer } from "../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
 import "./playerCard.scss";
 

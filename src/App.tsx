@@ -5,6 +5,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import TeamRankingPage from "./pages/TeamRankingPage";
 import AppNavbar from "./components/Navbar";
 import Main from "./components/Main";
+import TeamProfilePage from "./pages/TeamProfilePage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 path={`/ranking/teams/:year/:month/:day`}
                 element={<TeamRankingPage />}
               />
+              <Route path="/team/:teamId/:teamName" element={<TeamProfilePage />} />
             </Routes>
           </Container>
         </Main>

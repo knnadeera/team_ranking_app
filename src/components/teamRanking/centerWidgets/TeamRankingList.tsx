@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./teamRankingList.scss";
 import TeamRank from "./TeamRank";
 import { rankingDetails } from "../../../utils/enumsNModals/teamRanking";
-import { ITeamRank } from "../../../utils/interfaces/teamRank";
+import { ITeamRank } from "../../../utils/interfaces/teamRank.interface";
 
 interface IProp {
   date: string;

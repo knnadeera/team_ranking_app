@@ -42,14 +42,16 @@
   --bs-danger: #d9534f;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
-  --bs-primary-rgb: 69, 130, 236;
+  --bs-primary-rgb: 45, 109, 163;
   --bs-secondary-rgb: 173, 181, 189;
-  --bs-success-rgb: 2, 184, 117;
+  --bs-success-rgb: 96, 183, 70;
   --bs-info-rgb: 23, 162, 184;
   --bs-warning-rgb: 240, 173, 78;
   --bs-danger-rgb: 217, 83, 79;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 52, 58, 64;
+  --bs-dark-rgb: 48, 56, 67;
+  --bs-text-dark: 110, 119, 128;
+  --bs-text-light-dark: 138, 145, 152;
   --bs-primary-text-emphasis: #1c345e;
   --bs-secondary-text-emphasis: #45484c;
   --bs-success-text-emphasis: #014a2f;
@@ -1940,7 +1942,7 @@ progress {
 }
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #f8f9fa;
+  --bs-table-bg: #e2e3e4;
   --bs-table-border-color: #c6c7c8;
   --bs-table-striped-bg: #ecedee;
   --bs-table-striped-color: #000;
@@ -1952,8 +1954,8 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 .table-dark {
-  --bs-table-color: #fff;
-  --bs-table-bg: #343a40;
+  --bs-table-color: #86909d;
+  --bs-table-bg: #38424e;
   --bs-table-border-color: #5d6166;
   --bs-table-striped-bg: #3e444a;
   --bs-table-striped-color: #fff;
@@ -8357,13 +8359,21 @@ fieldset:disabled .btn {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
+.text-light-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-text-light-dark), var(--bs-text-opacity)) !important;
+}
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-text-dark), var(--bs-text-opacity)) !important;
 }
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+}
+.text-gray {
+  --bs-text-opacity: 1;
+  color: rgba(140, 156, 178, var(--bs-text-opacity)) !important;
 }
 .text-white {
   --bs-text-opacity: 1;
@@ -8620,6 +8630,10 @@ fieldset:disabled .btn {
 .link-underline-opacity-100-hover:hover {
   --bs-link-underline-opacity: 1;
 }
+.bg-light-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(75,91,114, var(--bs-text-opacity)) !important;
+}
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(
@@ -8655,6 +8669,10 @@ fieldset:disabled .btn {
 .bg-danger {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-dark-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(89,45,59, var(--bs-bg-opacity)) !important;
 }
 .bg-light {
   --bs-bg-opacity: 1;

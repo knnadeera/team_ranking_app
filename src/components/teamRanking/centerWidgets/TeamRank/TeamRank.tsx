@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank";
+import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
 import {
   BiSolidChevronRightSquare,
@@ -9,6 +9,7 @@ import {
 import "./teamRank.scss";
 import PlayerCard from "../PlayerCard";
 import { useNavigate } from "react-router-dom";
+import { ETeamProfileTabs } from "../../../../utils/enumsNModals/teamProfile";
 
 interface IProp {
   rank: ITeamRank;
@@ -25,7 +26,7 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
 
   const teamProfileHandler = () => {
     const teamName = rank.teamName.split(" ").join("-");
-    navigate(`/team/${rank.teamId}/${teamName}#tab-info`);
+    navigate(`/team/${rank.teamId}/${teamName}#tab-${ETeamProfileTabs.INFO}`);
   };
 
   return (

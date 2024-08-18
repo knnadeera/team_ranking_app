@@ -4,7 +4,7 @@ import React from "react";
 import "./rankingList.scss";
 import TeamRank from "../TeamRank/TeamRank";
 import { rankingDetails } from "../../../../utils/enumsNModals/teamRanking";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank";
+import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
 
 interface IProp {
   date: string;
@@ -16,8 +16,9 @@ const TeamRankingList = ({ date }: IProp) => {
   return (
     <>
       <div className="date-selector d-flex justify-content-between mt-2">
-        <div className="teamRanking-Header">Valorant World ranking on {formattedDate}</div>
-
+        <div className="teamRanking-Header">
+          Valorant World ranking on {formattedDate}
+        </div>
       </div>
       <div className="mt-4">
         {rankingDetails.map((rank: ITeamRank, index) => (
