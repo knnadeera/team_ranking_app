@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 
 import { LinkContainer } from "react-router-bootstrap";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import "../utils/scss/navbar.scss";
+import "./navbar.scss";
 import { menuItems } from "../utils/enumsNModals/navbar";
 
 const AppNavbar = () => {

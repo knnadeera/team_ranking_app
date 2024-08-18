@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../../utils/scss/filters.scss";
+import "./filters.scss";
 import { getYears, months } from "../../../utils/enumsNModals/filers";
 import FilterDrop from "./FilterDrop";
 import moment from "moment";

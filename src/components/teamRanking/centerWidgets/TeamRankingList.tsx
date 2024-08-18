@@ -1,7 +1,7 @@
 import moment from "moment";
 import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import "../../../utils/scss/rankingList.scss";
+import "./teamRankingList.scss";
 import TeamRank from "./TeamRank";
 import { rankingDetails } from "../../../utils/enumsNModals/teamRanking";
 import { ITeamRank } from "../../../utils/interfaces/teamRank";
