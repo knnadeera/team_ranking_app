@@ -13,6 +13,7 @@ import {
 } from "../utils/enumsNModals/teamProfile";
 import { ITab } from "../utils/interfaces/tabSet.interface";
 import Roster from "../components/teamProfile/centerWidgets/roster/Roster";
+import Matches from "../components/teamProfile/centerWidgets/matches/Matches";
 
 const TeamProfilePage = () => {
   const location = useLocation();
@@ -58,6 +59,9 @@ const TeamProfilePage = () => {
           >
             {selectedTab === ETeamProfileTabs.ROSTER && (
               <Roster team={selectedTeam} />
+            )}
+            {selectedTab === ETeamProfileTabs.MATCHES && (
+              <Matches team={selectedTeam} />
             )}
           </TabSet>
         </div>

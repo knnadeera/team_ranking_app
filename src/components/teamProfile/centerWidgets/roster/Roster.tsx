@@ -13,7 +13,7 @@ interface IProp {
 }
 
 const Roster = ({ team }: IProp) => {
-  const getMonths = (date: string) => {
+  const getTimeOnTeam = (date: string) => {
     const now = moment();
     const dob = moment(date);
 
@@ -50,7 +50,7 @@ const Roster = ({ team }: IProp) => {
           ),
         },
         timeOnTeam: {
-          val: getMonths(team?.coach?.joinedDate),
+          val: getTimeOnTeam(team?.coach?.joinedDate),
           style: "text-dark align-middle",
         },
         mapsCoached: {
@@ -98,7 +98,7 @@ const Roster = ({ team }: IProp) => {
           style: "text-dark align-middle",
         },
         timeOnTeam: {
-          val: getMonths(player?.joinedDate),
+          val: getTimeOnTeam(player?.joinedDate),
           style: "text-dark align-middle",
         },
         mapsPlayed: {
