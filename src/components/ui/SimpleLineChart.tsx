@@ -51,13 +51,22 @@ const SimpleLineChart = ({ chartData }: IProp) => {
     );
   };
 
-  const minValue = Math.min(...chartData.map((data) => data.value));
-  const maxValue = Math.max(...chartData.map((data) => data.value));
+  // Invert values in the dataset
+  const prepareChartData = (
+    data: { date: string; value: number; imageUrl?: string }[]
+  ) => {
+    return data.map((item) => ({
+      ...item,
+      value: item.value * -1, // Invert the value
+    }));
+  };
+
+  const invertedChartData = prepareChartData(chartData);
 
   return (
     <ResponsiveContainer width="100%" height={300}>
       <LineChart
-        data={chartData}
+        data={invertedChartData}
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
       >
         <CartesianGrid
@@ -65,19 +74,12 @@ const SimpleLineChart = ({ chartData }: IProp) => {
           stroke="#78828e"
           vertical={false}
         />
-        <XAxis
-          dataKey="date"
-          interval={0} // Force ticks for every data point (each month)
-          tick={<CustomizedXAxisTick />}
-        />
+        <XAxis dataKey="date" interval={0} tick={<CustomizedXAxisTick />} />
         <YAxis
-          domain={[minValue, maxValue]}
-          tickFormatter={(value) => value}
+          tickFormatter={(value) => Math.abs(value).toString()}
           allowDecimals={false}
         />
-        <Tooltip
-          labelFormatter={(date) => moment(date).format("MMM YYYY")} // Format tooltip labels as "Jan 2024"
-        />
+        <Tooltip labelFormatter={(date) => moment(date).format("MMM YYYY")} />
         <Legend content={<CustomLegend />} />
         <Line dataKey="value" stroke="#919aa1" strokeWidth={2} dot={false} />
       </LineChart>
