@@ -1,9 +1,9 @@
 import React from "react";
 import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
 import moment from "moment";
-import { matches } from "../../../../utils/enumsNModals/matches";
 import { rankingDetails } from "../../../../utils/enumsNModals/teamRanking";
 import MatchDetails from "./MatchDetails";
+import { matches } from "../../../../utils/enumsNModals/teamProfile";
 
 interface IProp {
   team: ITeamRank;

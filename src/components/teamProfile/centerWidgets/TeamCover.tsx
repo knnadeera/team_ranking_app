@@ -1,6 +1,6 @@
 import React from "react";
 import "./teamCover.scss";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
+import { ITeamRank } from "../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
 
 interface IProp {

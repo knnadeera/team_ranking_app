@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import LeftWidgets from "../components/LeftWidgets";
 import RightWidgets from "../components/RightWidgets";
-import TeamCover from "../components/teamProfile/centerWidgets/roster/TeamCover";
-import TeamStatus from "../components/teamProfile/centerWidgets/roster/TeamStatus";
+import TeamCover from "../components/teamProfile/centerWidgets/TeamCover";
+import TeamStatus from "../components/teamProfile/centerWidgets/TeamStatus";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { ITeamRank } from "../utils/interfaces/teamRank.interface";
 import { rankingDetails } from "../utils/enumsNModals/teamRanking";
@@ -14,6 +14,7 @@ import {
 import { ITab } from "../utils/interfaces/tabSet.interface";
 import Roster from "../components/teamProfile/centerWidgets/roster/Roster";
 import Matches from "../components/teamProfile/centerWidgets/matches/Matches";
+import Info from "../components/teamProfile/centerWidgets/info/Info";
 
 const TeamProfilePage = () => {
   const location = useLocation();
@@ -57,6 +58,9 @@ const TeamProfilePage = () => {
             selected={selectedTab}
             onChangeTab={onChangeTab}
           >
+            {selectedTab === ETeamProfileTabs.INFO && (
+              <Info team={selectedTeam} />
+            )}
             {selectedTab === ETeamProfileTabs.ROSTER && (
               <Roster team={selectedTeam} />
             )}

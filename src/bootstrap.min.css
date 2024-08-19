@@ -8280,6 +8280,12 @@ fieldset:disabled .btn {
 .fs-6 {
   font-size: 1.1rem !important;
 }
+.fs-sm {
+  font-size: small !important;
+}
+.fs-xs {
+  font-size: x-small !important;
+}
 .fst-italic {
   font-style: italic !important;
 }

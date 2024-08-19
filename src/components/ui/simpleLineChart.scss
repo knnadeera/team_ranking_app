@@ -1,0 +1,13 @@
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 1000; /* Large value to start off-screen */
+  }
+  to {
+    stroke-dashoffset: 0; /* End with the line fully visible */
+  }
+}
+
+.line-animation {
+  stroke-dasharray: 1000; /* Long dash array to animate */
+  animation: drawLine 2s ease-out; /* Duration and easing for the animation */
+}

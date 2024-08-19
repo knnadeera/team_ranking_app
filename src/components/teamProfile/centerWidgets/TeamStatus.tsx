@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
+import { ITeamRank } from "../../../utils/interfaces/teamRank.interface";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import "./teamStatus.scss";
 import moment from "moment";
