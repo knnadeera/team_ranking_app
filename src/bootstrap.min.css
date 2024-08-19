@@ -42,14 +42,16 @@
   --bs-danger: #d9534f;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
-  --bs-primary-rgb: 69, 130, 236;
+  --bs-primary-rgb: 45, 109, 163;
   --bs-secondary-rgb: 173, 181, 189;
-  --bs-success-rgb: 2, 184, 117;
+  --bs-success-rgb: 96, 183, 70;
   --bs-info-rgb: 23, 162, 184;
   --bs-warning-rgb: 240, 173, 78;
   --bs-danger-rgb: 217, 83, 79;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 52, 58, 64;
+  --bs-dark-rgb: 48, 56, 67;
+  --bs-text-dark: 110, 119, 128;
+  --bs-text-light-dark: 138, 145, 152;
   --bs-primary-text-emphasis: #1c345e;
   --bs-secondary-text-emphasis: #45484c;
   --bs-success-text-emphasis: #014a2f;
@@ -1940,7 +1942,7 @@ progress {
 }
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #f8f9fa;
+  --bs-table-bg: #e2e3e4;
   --bs-table-border-color: #c6c7c8;
   --bs-table-striped-bg: #ecedee;
   --bs-table-striped-color: #000;
@@ -1952,8 +1954,8 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 .table-dark {
-  --bs-table-color: #fff;
-  --bs-table-bg: #343a40;
+  --bs-table-color: #86909d;
+  --bs-table-bg: #38424e;
   --bs-table-border-color: #5d6166;
   --bs-table-striped-bg: #3e444a;
   --bs-table-striped-color: #fff;
@@ -7573,6 +7575,15 @@ fieldset:disabled .btn {
   border-right: var(--bs-border-width) var(--bs-border-style)
     var(--bs-border-color) !important;
 }
+.border-top-light-dark {
+  border-top: var(--bs-border-width) var(--bs-border-style) #48596c !important;
+}
+.border-bottom-light-dark {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #48596c !important;
+}
+.border-end-light-dark {
+  border-right: var(--bs-border-width) var(--bs-border-style) #48596c !important;
+}
 .border-end-0 {
   border-right: 0 !important;
 }
@@ -7629,6 +7640,10 @@ fieldset:disabled .btn {
 .border-light {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-light-rgb), var(--bs-border-opacity)) !important;
+}
+.border-light-dark {
+  --bs-border-opacity: 1;
+  border-color: rgba(72, 89, 108, var(--bs-border-opacity)) !important;
 }
 .border-dark {
   --bs-border-opacity: 1;
@@ -8052,6 +8067,18 @@ fieldset:disabled .btn {
 .p-5 {
   padding: 3rem !important;
 }
+.px-n1 {
+  padding-right: -0.25rem !important;
+  padding-left: -0.25rem !important;
+}
+.px-n2 {
+  padding-right: -0.5rem !important;
+  padding-left: -0.5rem !important;
+}
+.px-n3 {
+  padding-right: -1rem !important;
+  padding-left: -1rem !important;
+}
 .px-0 {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -8253,6 +8280,12 @@ fieldset:disabled .btn {
 .fs-6 {
   font-size: 1.1rem !important;
 }
+.fs-sm {
+  font-size: small !important;
+}
+.fs-xs {
+  font-size: x-small !important;
+}
 .fst-italic {
   font-style: italic !important;
 }
@@ -8357,13 +8390,21 @@ fieldset:disabled .btn {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
+.text-light-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-text-light-dark), var(--bs-text-opacity)) !important;
+}
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-text-dark), var(--bs-text-opacity)) !important;
 }
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+}
+.text-gray {
+  --bs-text-opacity: 1;
+  color: rgba(140, 156, 178, var(--bs-text-opacity)) !important;
 }
 .text-white {
   --bs-text-opacity: 1;
@@ -8620,6 +8661,10 @@ fieldset:disabled .btn {
 .link-underline-opacity-100-hover:hover {
   --bs-link-underline-opacity: 1;
 }
+.bg-light-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(75, 91, 114, var(--bs-text-opacity)) !important;
+}
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(
@@ -8656,6 +8701,10 @@ fieldset:disabled .btn {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
+.bg-dark-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(89, 45, 59, var(--bs-bg-opacity)) !important;
+}
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
@@ -8663,6 +8712,10 @@ fieldset:disabled .btn {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-gray {
+  --bs-bg-opacity: 1;
+  background-color: rgba(56, 66, 78, var(--bs-bg-opacity)) !important;
 }
 .bg-black {
   --bs-bg-opacity: 1;

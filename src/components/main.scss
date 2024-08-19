@@ -1,11 +1,11 @@
 .main {
   overflow-x: auto;
-    // width: 100%;
-  background-image: url('../../../public/valorant.webp');
+  // width: 100%;
+  background-image: url("../../public/valorant.webp");
   background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #0F1923;
+  background-color: #0f1923;
 }
 
 .container .col-2,
@@ -15,7 +15,7 @@
 }
 
 .content {
-  background-color: #13151A;
+  background-color: #13151a;
 }
 
 @media (max-width: 1439px) {

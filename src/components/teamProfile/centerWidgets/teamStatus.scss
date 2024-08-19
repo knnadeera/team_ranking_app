@@ -1,0 +1,38 @@
+.team-status {
+  color: #919aa1;
+}
+
+.text-color-dark {
+  color: #78828e;
+}
+
+.team-status-border {
+  border-bottom: #48596c 1px solid;
+}
+
+.twitter {
+  background-color: #1da1f2;
+
+  &:hover {
+    background-color: #0d8bd0;
+    cursor: pointer;
+  }
+}
+
+.instagram {
+  background-color: #f00075;
+
+  &:hover {
+    background-color: #ba005a;
+    cursor: pointer;
+  }
+}
+
+.social-media {
+  padding: 4px;
+  color: white;
+  border-radius: 2px;
+  margin: 0 3px;
+  font-size: x-large;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}

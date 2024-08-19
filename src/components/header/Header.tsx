@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/images.png";
-import "../../utils/scss/header.scss";
+import "./header.scss";
 import GGBet from "./GGBet";
 import gif from "../../assets/images/Y0_NuTH0mFCaRQL2AJXaj7.gif";
 import { Image } from "react-bootstrap";

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ITeamRank } from "../../../utils/interfaces/teamRank";
+import { ITeamRank } from "../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
-import "../../../utils/scss/teamRank.scss";
+import "./teamRank.scss";
 import { LuDot } from "react-icons/lu";
 import PlayerCard from "./PlayerCard";
 

@@ -1,4 +1,4 @@
-import { INavbar } from "../interfaces/navbar";
+import { INavbar } from "../interfaces/navbar.interface";
 
 export enum ENavIds {
   NEWS = "News",
