@@ -1,5 +1,5 @@
 import React from "react";
-import "../../utils/scss/betCard.scss";
+import "./betCard.scss";
 import TeamOdds from "./TeamOdds";
 import BetBtn from "./BetBtn";
 

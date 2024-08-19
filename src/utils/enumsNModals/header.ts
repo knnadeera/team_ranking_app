@@ -1,4 +1,4 @@
-import { IHeaderCard } from "../interfaces/header";
+import { IHeaderCard } from "../interfaces/header.interface";
 
 export const gamesData: IHeaderCard[] = [
   {

@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank";
+import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
-import { BiSolidChevronRightSquare, BiSolidChevronDownSquare, BiSolidChevronUpSquare } from "react-icons/bi";
+import {
+  BiSolidChevronRightSquare,
+  BiSolidChevronDownSquare,
+  BiSolidChevronUpSquare,
+} from "react-icons/bi";
 import "./teamRank.scss";
 import PlayerCard from "../PlayerCard";
+import { useNavigate } from "react-router-dom";
+import { ETeamProfileTabs } from "../../../../utils/enumsNModals/teamProfile";
 
 interface IProp {
   rank: ITeamRank;
@@ -12,10 +18,16 @@ interface IProp {
 
 const TeamRank = ({ rank, isOpen }: IProp) => {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShow(isOpen);
   }, [isOpen]);
+
+  const teamProfileHandler = () => {
+    const teamName = rank.teamName.split(" ").join("-");
+    navigate(`/team/${rank.teamId}/${teamName}#tab-${ETeamProfileTabs.INFO}`);
+  };
 
   return (
     <>
@@ -27,39 +39,37 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
           <div className="d-flex align-items-center">
             <div className="rank-badge">
               <div className="rank-badge highlight"></div>
-           
-                <div className="rank-badge rank">
-                  <span >#</span>
-                  <span className="rank-badge number">{rank.rank}</span>
-                </div>
-            
+
+              <div className="rank-badge rank">
+                <span>#</span>
+                <span className="rank-badge number">{rank.rank}</span>
+              </div>
             </div>
             <div className="team-rank-detail">
               <div className="team-rank-detail points-container">
-                    <span className="points">{rank.points}</span>&nbsp;
-                    <span className="pts-symbol">pts</span>
+                <span className="points">{rank.points}</span>&nbsp;
+                <span className="pts-symbol">pts</span>
               </div>
               <div className="team-rank-detail comparison">
                 {rank.compare > 0 ? (
-                  <BiSolidChevronUpSquare color="green" size='15' />
+                  <BiSolidChevronUpSquare color="green" size="15" />
                 ) : rank.compare < 0 ? (
-                    <BiSolidChevronDownSquare  color="red" size='15'/>
-                  )  : <BiSolidChevronRightSquare  color="#868686" size='15'/> }
-                
+                  <BiSolidChevronDownSquare color="red" size="15" />
+                ) : (
+                  <BiSolidChevronRightSquare color="#868686" size="15" />
+                )}
 
-                <span className="team-rank-detail comparison-text">{rank.compare}</span> 
+                <span className="team-rank-detail comparison-text">
+                  {rank.compare}
+                </span>
               </div>
-            <div>
+              <div></div>
+            </div>
 
-            </div>
-            </div>
-       
             <Image src={rank.logo} alt="logo" width={25} className="mx-3" />
-            
+
             <div className="name d-flex flex-column justify-content-center accordion-content ">
-              <div className="team-rank-name">
-                {rank.teamName}
-              </div>
+              <div className="team-rank-name">{rank.teamName}</div>
               <div
                 className={`players-names d-flex accordion-content ${
                   !show ? "open" : ""
@@ -79,7 +89,6 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
               </div>
             </div>
           </div>
-         
         </div>
         <div
           className={`accordion-content ${show ? "open" : ""}`}
@@ -97,7 +106,9 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
             </div>
             <div className="rank-detail-btn border-top row">
               <div className="col-6 d-flex justify-content-center">
-                <button>Team profile</button>
+                <button type="button" onClick={teamProfileHandler}>
+                  Team profile
+                </button>
               </div>
               <div className="col-6 d-flex justify-content-center">
                 <button>Ranking details</button>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { gamesData } from "../../utils/enumsNModals/header";
-import { IHeaderCard } from "../../utils/interfaces/header";
+import { IHeaderCard } from "../../utils/interfaces/header.interface";
 import { Image } from "react-bootstrap";
 
 const GGBet = () => {

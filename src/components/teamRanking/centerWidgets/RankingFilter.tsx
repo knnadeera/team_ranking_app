@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../utils/scss/rankingFilter.scss";
+import "./rankingFilter.scss";
 
 interface IProp {
   data: { title: string }[];
