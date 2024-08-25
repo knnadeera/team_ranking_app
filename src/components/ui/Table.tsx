@@ -25,7 +25,7 @@ const Table = ({ title, subTitle, tableData }: IProp) => {
             {tableData?.columns?.map((column, index) => (
               <th
                 key={index}
-                className={`py-1 fw-medium ${column.style ?? ""}`}
+                className={`py-1 tHead ${column.style ?? ""}`}
               >
                 {stringFormatting(column.header, EStringFormatting.FIRST)}
               </th>

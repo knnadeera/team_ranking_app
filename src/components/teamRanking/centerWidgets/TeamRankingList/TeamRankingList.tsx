@@ -14,7 +14,7 @@ const TeamRankingList = ({ date }: IProp) => {
   const formattedDate = moment(date, "YYYY-MMMM-D").format("MMMM Do, YYYY");
 
   return (
-    <>
+    <div className="teamRanking-list">
       <div className="date-selector d-flex justify-content-between mt-2">
         <div className="teamRanking-Header">
           Valorant World ranking on {formattedDate}
@@ -27,7 +27,7 @@ const TeamRankingList = ({ date }: IProp) => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

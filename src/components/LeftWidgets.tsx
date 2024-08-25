@@ -6,11 +6,11 @@ interface IProp {
 
 const LeftWidgets = ({ children }: IProp) => {
   return (
-    <>
+    <div className="w-100">
       {Children.map(children, (child) => (
-        <div>{child}</div>
+        <div className="w-100">{child}</div>
       ))}
-    </>
+    </div>
   );
 };
 

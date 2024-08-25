@@ -14,9 +14,9 @@ const PlayerCard = ({ player }: IProp) => {
           src={player.image}
           alt="profile"
           width={100}
-          className="player-image"
+          className="tr-player-image"
         />
-        <div className="player-name">
+        <div className="tr-player-name">
           <Image src={player.flag} alt="flag" width={15} className="me-1" />
           {player.name}
         </div>

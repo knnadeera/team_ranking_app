@@ -1,5 +1,7 @@
 export interface IPlayer {
+  id: string;
   name: string;
+  realName: string;
   image: string;
   flag: string;
   joinedDate: string;

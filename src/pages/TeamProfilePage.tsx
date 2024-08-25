@@ -12,9 +12,10 @@ import {
   teamProfileTabs,
 } from "../utils/enumsNModals/teamProfile";
 import { ITab } from "../utils/interfaces/tabSet.interface";
-import Roster from "../components/teamProfile/centerWidgets/roster/Roster";
-import Matches from "../components/teamProfile/centerWidgets/matches/Matches";
-import Info from "../components/teamProfile/centerWidgets/info/Info";
+import TPRoster from "../components/teamProfile/centerWidgets/roster/Roster";
+import TPMatches from "../components/teamProfile/centerWidgets/matches/Matches";
+import TPInfo from "../components/teamProfile/centerWidgets/info/Info";
+import "./commonPage.scss";
 
 const TeamProfilePage = () => {
   const location = useLocation();
@@ -27,9 +28,9 @@ const TeamProfilePage = () => {
   const { teamId } = useParams();
 
   useEffect(() => {
-    const selectedTeam = rankingDetails.find((team) => team.teamId === teamId);
-    if (selectedTeam) {
-      setSelectedTeam(selectedTeam);
+    const team = rankingDetails.find((team) => team.teamId === teamId);
+    if (team) {
+      setSelectedTeam(team);
     } else {
       navigate(-1);
     }
@@ -44,13 +45,13 @@ const TeamProfilePage = () => {
 
   return (
     <>
-      <div className="row">
-        <div className="col-2">
+      <div className="pageContent">
+        <div className="pageLeft">
           <LeftWidgets>
             <div>Filters</div>
           </LeftWidgets>
         </div>
-        <div className="col-8">
+        <div className="pageCenter">
           <TeamCover team={selectedTeam} />
           <TeamStatus team={selectedTeam} />
           <TabSet
@@ -59,17 +60,17 @@ const TeamProfilePage = () => {
             onChangeTab={onChangeTab}
           >
             {selectedTab === ETeamProfileTabs.INFO && (
-              <Info team={selectedTeam} />
+              <TPInfo team={selectedTeam} />
             )}
             {selectedTab === ETeamProfileTabs.ROSTER && (
-              <Roster team={selectedTeam} />
+              <TPRoster team={selectedTeam} />
             )}
             {selectedTab === ETeamProfileTabs.MATCHES && (
-              <Matches team={selectedTeam} />
+              <TPMatches team={selectedTeam} />
             )}
           </TabSet>
         </div>
-        <div className="col-2">
+        <div className="pageRight">
           <RightWidgets>
             <div>Recent Activity</div>
           </RightWidgets>

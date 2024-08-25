@@ -1,0 +1,27 @@
+.pageContent {
+  display: flex;
+  width: 100%;
+  background-color: var(--main-bg-color);
+
+  .pageLeft,
+  .pageRight {
+    width: 15%;
+    padding: 0 10px;
+  }
+
+  .pageCenter {
+    width: 70%;
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 426px) {
+    .pageLeft,
+    .pageRight {
+      display: none;
+    }
+    .pageCenter {
+      width: 100%;
+      padding-top: 1rem;
+    }
+  }
+}

@@ -1,7 +1,19 @@
 .table-container {
-  color: #848d94;
-}
+  color: #ffffff;
 
-.table-item {
-  background-color: #303843 !important;
+  .table-item {
+    background-color: #191c21 !important;
+  }
+
+  .tHead {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: x-small;
+
+    .tHead {
+      font-size: x-small;
+    }
+  }
 }

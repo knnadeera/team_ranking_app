@@ -1,0 +1,28 @@
+.player-statistics {
+  color: var(--text-off-white);
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .sub-title {
+      font-size: small;
+    }
+  }
+
+  .body {
+    background-color: #38424ea5;
+
+    .body-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 5px;
+      font-size: small;
+    }
+  }
+}

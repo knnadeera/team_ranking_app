@@ -1,159 +1,162 @@
-.team-rank {
+@import "../../../theme.scss";
+
+.tr-team-rank {
   margin-bottom: 8px;
+  width: 100%;
 
   .head {
-    background-color: #191C21;
+    background-color: #191c21;
     // padding: 2px 6px;
     height: 3rem;
     cursor: pointer;
   }
-}
 
-.rank-badge {
-  display : flex;
-  justify-content: center;
-
-  .highlight {
-    font-size: 16px;
-    font-weight: normal;
-    background-color: #E8B540;
-    display : flex;
+  .rank-badge {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 0.3rem;
-  }
-  .rank {
-    font-size: 16px;
-    font-weight: normal;
-    background-color: #464646;
-    padding-top: 17%;
-    padding-bottom: 17%;
-    color: #DBD9D5;
 
-    align-items: center;
-    width: 3rem;
-  
-    .number {
-      font-size: 20px;
-      font-weight: 600;
+    .highlight {
+      font-size: 16px;
+      font-weight: normal;
+      background-color: var(--primary-orange);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0.6rem;
+    }
+    .rank {
+      font-size: 16px;
+      font-weight: normal;
+      background-color: var(--main-bg-analogue);
+      padding-top: 17%;
+      padding-bottom: 17%;
+      color: #dbd9d5;
+
+      align-items: center;
+      width: 3rem;
+
+      .number {
+        font-size: 20px;
+        font-weight: 600;
+      }
     }
   }
 
-}
+  .team-rank-detail {
+    // padding: 0 2rem 0 2rem;
 
-.team-rank-detail {
-  // padding: 0 2rem 0 2rem;
+    .points-container {
+      display: flex;
+      justify-content: center;
+      height: 16px;
+      padding: 0 2rem 0 2rem;
 
-  .points-container {
-    display : flex;
-    justify-content: center;
-    height: 16px;
-    padding: 0 2rem 0 2rem;
-
-    .points {
-      color: #DBD9D5;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 14px;
+      .points {
+        color: #dbd9d5;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+      }
+      .pts-symbol {
+        color: #707070;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+      }
     }
-    .pts-symbol {
-  
-      color: #707070;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 14px;
-     
 
+    .comparison {
+      display: flex;
+      justify-content: center;
+      height: 14px;
+
+      .comparison-text {
+        padding-left: 2px;
+        color: #dbd9d5;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .team-rank-name {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #dbd9d5;
+    font-family: "Calps Sans", Helvetica, Arial, sans-serif;
+  }
+
+  .player {
+    color: #868686;
+  }
+
+  .name {
+    font-size: medium;
+
+    span {
+      font-size: small;
     }
   }
 
-  .comparison {
-    display : flex;
-    justify-content: center;
-    height: 14px;
-  
-    .comparison-text {
-      padding-left: 2px;
-      color: #DBD9D5;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 14px;
-    }
+  .increased {
+    color: green;
   }
-}
 
+  .decreased {
+    color: red;
+  }
 
-.team-rank-name {
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  color: #DBD9D5;
-  font-family: "Calps Sans", Helvetica, Arial, sans-serif;
-}
+  .players-names {
+    font-size: x-small;
+    margin: -2px 3px 0 0;
+    padding: -2rem;
+  }
 
-.player {
-  color: #868686;
-}
-
-.name {
-  font-size: medium;
-
-  span {
+  .player-name {
     font-size: small;
   }
-}
 
+  .rank-detail-btn {
+    font-size: small;
 
+    button {
+      border: none;
+      background-color: white;
+      margin-top: 0.3rem;
 
-.increased {
-  color: green;
-}
+      &:hover {
+        background-color: rgb(245, 245, 245);
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
 
-.decreased {
-  color: red;
-}
+  .drop-items-container {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 
-.players-names {
-  font-size: x-small;
-  margin: -2px 3px 0 0;
-  padding: -2rem;
-}
+    .open {
+      max-height: 200px; /* or adjust based on your content */
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .close {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
 
-.player-name {
-  font-size: small;
-}
-
-.rank-detail-btn {
-  font-size: small;
-}
-
-.rank-detail-btn button {
-  border: none;
-  background-color: white;
-  margin-top: 0.3rem;
-}
-.rank-detail-btn button:hover {
-  background-color: rgb(245, 245, 245);
-  width: 100%;
-  border-radius: 5px;
-}
-
-.drop-items-container {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-}
-
-.drop-items-container.open {
-  max-height: 200px; /* or adjust based on your content */
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.drop-items-container.close {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-20px);
+  .player-card {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
