@@ -10,7 +10,7 @@ interface IProp {
 const RankingFilter = ({ data, selected, onClick }: IProp) => {
   return (
     <>
-      <div className="ranking-filter">
+      <div className="tr-ranking-filter">
         {data.map((d, index) => (
           <div
             key={index}

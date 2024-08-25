@@ -12,7 +12,6 @@ const Main = ({ children }: IProp) => {
       <div className="row main">
         <div className="col-2" />
         <div className="col-8 content mt-1 pt-3">
-          {/* <Header /> */}
           {Children.map(children, (child, index) => (
             <div key={index}>{child}</div>
           ))}

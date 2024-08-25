@@ -1,18 +1,27 @@
 import React from "react";
 import Table from "../../../ui/Table";
-import TablePLayerCard from "./TablePLayerCard";
+import TablePLayerCard, { EProfile } from "./TablePLayerCard";
 import { ITableData } from "../../../../utils/interfaces/table.interface";
 import moment from "moment";
 import {
   IPlayer,
   ITeamRank,
 } from "../../../../utils/interfaces/teamRank.interface";
+import { useNavigate } from "react-router-dom";
+import { EPlayerProfileTabs } from "../../../../utils/enumsNModals/playerProfile";
 
 interface IProp {
   team: ITeamRank;
 }
 
-const Roster = ({ team }: IProp) => {
+const TPRoster = ({ team }: IProp) => {
+  const navigate = useNavigate();
+
+  const playerHandler = (player: IPlayer) => {
+    const name = player.name.split(" ").join("-");
+    navigate(`/player/${player.id}/${name}#tab-${EPlayerProfileTabs.INFO}`);
+  };
+
   const getTimeOnTeam = (date: string) => {
     const now = moment();
     const dob = moment(date);
@@ -46,6 +55,7 @@ const Roster = ({ team }: IProp) => {
               src={team?.coach?.image}
               flag={team?.coach?.flag}
               name={team?.coach?.nicName}
+              profile={EProfile.COACH}
             />
           ),
         },
@@ -76,11 +86,14 @@ const Roster = ({ team }: IProp) => {
       return {
         play: {
           val: (
-            <TablePLayerCard
-              src={player?.image}
-              flag={player?.flag}
-              name={player?.name}
-            />
+            <div onClick={() => playerHandler(player)}>
+              <TablePLayerCard
+                src={player?.image}
+                flag={player?.flag}
+                name={player?.name}
+                profile={EProfile.PLAYER}
+              />
+            </div>
           ),
         },
         status: {
@@ -144,4 +157,4 @@ const Roster = ({ team }: IProp) => {
   );
 };
 
-export default Roster;
+export default TPRoster;

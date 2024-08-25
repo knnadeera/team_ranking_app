@@ -6,6 +6,7 @@ import TeamRankingPage from "./pages/TeamRankingPage";
 import AppNavbar from "./components/Navbar";
 import Main from "./components/Main";
 import TeamProfilePage from "./pages/TeamProfilePage";
+import PlayerProfilePage from "./pages/PlayerProfilePage";
 
 function App() {
   return (
@@ -23,7 +24,14 @@ function App() {
                 path={`/ranking/teams/:year/:month/:day`}
                 element={<TeamRankingPage />}
               />
-              <Route path="/team/:teamId/:teamName" element={<TeamProfilePage />} />
+              <Route
+                path="/team/:teamId/:teamName"
+                element={<TeamProfilePage />}
+              />
+              <Route
+                path="/player/:playerId/:playerName"
+                element={<PlayerProfilePage />}
+              />
             </Routes>
           </Container>
         </Main>

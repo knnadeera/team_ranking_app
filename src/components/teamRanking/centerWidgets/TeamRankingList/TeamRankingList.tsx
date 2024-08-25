@@ -15,7 +15,7 @@ const TeamRankingList = ({ date }: IProp) => {
 
   return (
     <>
-      <div className="date-selector d-flex justify-content-between mt-2">
+      <div className="tr-date-selector d-flex justify-content-between mt-2">
         <div className="teamRanking-Header">
           Valorant World ranking on {formattedDate}
         </div>

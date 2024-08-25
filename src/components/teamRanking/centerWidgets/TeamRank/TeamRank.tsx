@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { ITeamRank } from "../../../../utils/interfaces/teamRank.interface";
+import {
+  IPlayer,
+  ITeamRank,
+} from "../../../../utils/interfaces/teamRank.interface";
 import { Image } from "react-bootstrap";
 import {
   BiSolidChevronRightSquare,
@@ -10,6 +13,7 @@ import "./teamRank.scss";
 import PlayerCard from "../PlayerCard";
 import { useNavigate } from "react-router-dom";
 import { ETeamProfileTabs } from "../../../../utils/enumsNModals/teamProfile";
+import { EPlayerProfileTabs } from "../../../../utils/enumsNModals/playerProfile";
 
 interface IProp {
   rank: ITeamRank;
@@ -29,9 +33,14 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
     navigate(`/team/${rank.teamId}/${teamName}#tab-${ETeamProfileTabs.INFO}`);
   };
 
+  const playerHandler = (player: IPlayer) => {
+    const name = player.name.split(" ").join("-");
+    navigate(`/player/${player.id}/${name}#tab-${EPlayerProfileTabs.INFO}`);
+  };
+
   return (
     <>
-      <div className="team-rank">
+      <div className="tr-team-rank">
         <div
           className="head d-flex justify-content-between align-items-center accordion"
           onClick={() => setShow(!show)}
@@ -101,7 +110,9 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
           <div className="bg-white py-2 px-3 border-top">
             <div className="d-flex justify-content-between mb-2">
               {rank.players.map((player, i) => (
-                <PlayerCard key={i} player={player} />
+                <div key={i} onClick={() => playerHandler(player)} className="player-card" >
+                  <PlayerCard player={player} />
+                </div>
               ))}
             </div>
             <div className="rank-detail-btn border-top row">

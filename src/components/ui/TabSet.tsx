@@ -28,7 +28,7 @@ const TabSet = ({ tabs, selected, children, onChangeTab }: Prop) => {
             {tab.title}
           </div>
         ))}
-        <div className="d-flex w-100 px-3 py-1 tab" />
+        <div className="d-flex flex-grow-1 px-3 py-1 tab" />
       </div>
       <div className="p-3">
         {Children.map(children, (child, index) => (

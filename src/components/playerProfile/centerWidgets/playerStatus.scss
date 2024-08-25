@@ -1,0 +1,86 @@
+.pp-player-status {
+  display: flex;
+  position: relative;
+  border-bottom: var(--dark-gray) 5px solid;
+  background-color: var(--background-color);
+
+  .player-tag {
+    position: absolute;
+    color: var(--white);
+    font-size: smaller;
+    background-color: var(--dark-gray);
+    padding: 0 8px;
+    border-radius: 0 0 5px 0;
+  }
+
+  .player-image {
+    width: 30%;
+    padding: 1rem 1rem 0 1rem;
+    background: linear-gradient(to bottom right, #191c21, #464646);
+  }
+
+  .player-details {
+    width: 70%;
+    padding: 1rem;
+    color: var(--text-off-white);
+    font-size: medium;
+  }
+
+  .player-name {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .twitter {
+    color: white;
+    background-color: #1da1f2;
+
+    &:hover {
+      background-color: #0d8bd0;
+      cursor: pointer;
+    }
+  }
+
+  .twitch {
+    color: white;
+    background-color: #6441a4;
+
+    &:hover {
+      background-color: #4b2a7e;
+      cursor: pointer;
+    }
+  }
+
+  .instagram {
+    color: white;
+    background-color: #f00075;
+
+    &:hover {
+      background-color: #ba005a;
+      cursor: pointer;
+    }
+  }
+
+  .faceIt {
+    color: #c14609;
+    background-color: #1f1f1f;
+
+    &:hover {
+      background-color: #343434;
+      cursor: pointer;
+    }
+  }
+
+  .social-media {
+    padding: 4px;
+    border-radius: 2px;
+    margin: 0 3px;
+    font-size: x-large;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .player-flag {
+    display: flex;
+    align-items: center;
+  }
+}
