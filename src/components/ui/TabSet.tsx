@@ -16,7 +16,7 @@ const TabSet = ({ tabs, selected, children, onChangeTab }: Prop) => {
 
   return (
     <div className="tab-set mt-3">
-      <div className="d-flex">
+      <div className="tabs">
         {tabs.map((tab, i) => (
           <div
             key={i}
@@ -30,7 +30,7 @@ const TabSet = ({ tabs, selected, children, onChangeTab }: Prop) => {
         ))}
         <div className="d-flex flex-grow-1 px-3 py-1 tab" />
       </div>
-      <div className="p-3">
+      <div className="p-3 body">
         {Children.map(children, (child, index) => (
           <div key={index}>{child}</div>
         ))}

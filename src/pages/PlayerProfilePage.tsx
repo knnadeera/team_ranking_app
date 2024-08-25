@@ -14,6 +14,8 @@ import { rankingDetails } from "../utils/enumsNModals/teamRanking";
 import Ranking from "../components/widgets/Ranking";
 import { IRankingData } from "../utils/interfaces/ranking.interface";
 import moment from "moment";
+import PPInfo from "../components/playerProfile/centerWidgets/Info";
+import "./commonPage.scss";
 
 const PlayerProfilePage = () => {
   const location = useLocation();
@@ -52,15 +54,16 @@ const PlayerProfilePage = () => {
     ?.sort((a, b) => a.rank - b.rank)
     .slice(0, 5)
     .map((team) => ({
+      id: team.teamId,
       rank: team.rank,
       image: team.logo,
       name: team.teamName,
+      param: "team",
     }));
 
-  console.log(sortedRanking);
   return (
-    <div className="row content">
-      <div className="col-2 p-0">
+    <div className="pageContent">
+      <div className="pageLeft">
         <LeftWidgets>
           <Ranking
             title="ranking"
@@ -70,7 +73,7 @@ const PlayerProfilePage = () => {
           <Ranking title="fpl ranking" rankingData={sortedRanking} />
         </LeftWidgets>
       </div>
-      <div className="col-8">
+      <div className="pageCenter">
         <PlayerStatus
           teamData={{
             teamLogo: selectedTeam.logo,
@@ -83,7 +86,9 @@ const PlayerProfilePage = () => {
           selected={selectedTab}
           onChangeTab={onChangeTab}
         >
-          {selectedTab === EPlayerProfileTabs.INFO && <div>Info</div>}
+          {selectedTab === EPlayerProfileTabs.INFO && (
+            <PPInfo player={selectedPlayer} />
+          )}
           {selectedTab === EPlayerProfileTabs.IN_GAME && <div>In Game</div>}
           {selectedTab === EPlayerProfileTabs.HEALTH_WELLNESS && (
             <div>Health & Wellness</div>
@@ -94,7 +99,7 @@ const PlayerProfilePage = () => {
           {selectedTab === EPlayerProfileTabs.MATCHES && <div>Matches</div>}
         </TabSet>
       </div>
-      <div className="col-2 p-0">
+      <div className="right">
         <RightWidgets>
           <div>Recent Activity</div>
         </RightWidgets>

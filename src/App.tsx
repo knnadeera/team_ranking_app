@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <AppNavbar />
-      <main className="p-3 appBG ">
+      <main className="appBG ">
         <Main>
           <Container>
             <Routes>

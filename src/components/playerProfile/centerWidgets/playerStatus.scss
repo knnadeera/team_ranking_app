@@ -1,8 +1,10 @@
 .pp-player-status {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   border-bottom: var(--dark-gray) 5px solid;
   background-color: var(--background-color);
+  padding-top: 5px;
 
   .player-tag {
     position: absolute;
@@ -15,6 +17,7 @@
 
   .player-image {
     width: 30%;
+    height: 30%;
     padding: 1rem 1rem 0 1rem;
     background: linear-gradient(to bottom right, #191c21, #464646);
   }

@@ -6,6 +6,8 @@ import {
   EStringFormatting,
   stringFormatting,
 } from "../../functions/stringFormattingFunction";
+import { ETeamProfileTabs } from "../../utils/enumsNModals/teamProfile";
+import { useNavigate } from "react-router-dom";
 
 interface IProp {
   title: string;
@@ -14,6 +16,13 @@ interface IProp {
 }
 
 const Ranking = ({ title, rankingData, footer }: IProp) => {
+  const navigate = useNavigate();
+
+  const teamProfileHandler = (rd: IRankingData) => {
+    const name = rd.name.split(" ").join("-");
+    navigate(`/${rd.param}/${rd.id}/${name}#tab-${ETeamProfileTabs.INFO}`);
+  };
+
   return (
     <div className="ranking">
       <div className="title">
@@ -21,7 +30,9 @@ const Ranking = ({ title, rankingData, footer }: IProp) => {
       </div>
       {rankingData?.map((rd: IRankingData, i: number) => (
         <div
+          key={i}
           className={`body ${rankingData?.length !== i + 1 && "borderBottom"}`}
+          onClick={() => teamProfileHandler(rd)}
         >
           <div>{rd.rank}.</div>
           <Image src={rd.image} alt="image" width={15} />

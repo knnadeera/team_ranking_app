@@ -10,13 +10,13 @@ const Main = ({ children }: IProp) => {
   return (
     <>
       <div className="row main">
-        <div className="col-2" />
-        <div className="col-8 content mt-1 pt-3">
+        <div className="left" />
+        <div className="content mt-1 pt-3">
           {Children.map(children, (child, index) => (
             <div key={index}>{child}</div>
           ))}
         </div>
-        <div className="col-2" />
+        <div className="right" />
       </div>
     </>
   );

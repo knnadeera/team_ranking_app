@@ -1,0 +1,10 @@
+.pp-info {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--background-color);
+  width: 100%;
+
+  .info-card {
+    width: 50%;
+  }
+}

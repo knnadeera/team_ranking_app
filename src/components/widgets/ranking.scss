@@ -35,4 +35,10 @@
     padding: 2px 0;
     background-color: #38424e;
   }
+
+  @media screen and (max-width: 1024px) {
+    .body {
+      font-size: x-small;
+    }
+  }
 }

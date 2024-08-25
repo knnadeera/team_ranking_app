@@ -1,14 +1,15 @@
 import React from "react";
-import LeftWidgets from "../components/LeftWidgets";
 import RightWidgets from "../components/RightWidgets";
+import { useParams } from "react-router-dom";
+import TeamRankingList from "../components/teamRanking/centerWidgets/TeamRankingList/TeamRankingList";
+import "./commonPage.scss";
+import LeftWidgets from "../components/LeftWidgets";
 // import Filters from "../components/teamRanking/leftWidgets/Filters";
 // import BetCard from "../components/betCard/BetCard";
-import { useParams } from "react-router-dom";
 // import moment from "moment";
 // import { months } from "../utils/enumsNModals/filers";
 // import RankingFilter from "../components/teamRanking/centerWidgets/RankingFilter";
 // import partnerImg from "../assets/images/TjraHuDQ-yp57zA3xG7JFZ.webp";
-import TeamRankingList from "../components/teamRanking/centerWidgets/TeamRankingList/TeamRankingList";
 // import { rankingFilterBtnsData } from "../utils/enumsNModals/teamRanking";
 // import { Image } from "react-bootstrap";
 
@@ -73,8 +74,8 @@ const TeamRankingPage = () => {
 
   return (
     <>
-      <div className="row">
-        <div className="col-2">
+      <div className="pageContent">
+        <div className="pageLeft">
           <LeftWidgets>
             {/* <BetCard /> */}
             {/* <Filters
@@ -85,9 +86,10 @@ const TeamRankingPage = () => {
               setMonth={(val) => selectedMonthHandler(val)}
               setDay={(val) => selectedDayHandler(val)}
             /> */}
+            <div>Recent Activity</div>
           </LeftWidgets>
         </div>
-        <div className="col-8">
+        <div className="pageCenter">
           {/* <RankingFilter
             data={rankingFilterBtnsData}
             selected={selectedRanking}
@@ -98,7 +100,7 @@ const TeamRankingPage = () => {
           {/* <Image src={partnerImg} alt="partner" className="w-100 mt-4" /> */}
           <TeamRankingList date={`${year}-${month}-${day}`} />
         </div>
-        <div className="col-2">
+        <div className="pageRight">
           <RightWidgets>
             <div>Recent Activity</div>
           </RightWidgets>

@@ -1,31 +1,42 @@
-@import  './theme.scss';
+@import "./theme.scss";
 
 .main {
   overflow-x: auto;
-  // width: 100%;
+  width: 100%;
   background-image: url("../../public/valorant.webp");
   background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #0f1923;
-}
 
-.container .col-2,
-.container .col-8 {
-  flex-shrink: 0;
-  //   max-width: calc(100% - 4rem);
-}
-
-.content {
-  background-color: var(--main-bg-color);
-}
-
-@media (max-width: 1439px) {
-  .main {
-    width: 150%;
+  .left,
+  .right {
+    width: 15%;
   }
-  .container {
-    justify-content: center;
-    width: 1440px;
+
+  .center {
+    width: 70%;
+    background-color: var(--main-bg-color);
   }
+  
+  @media screen and (min-width: 1439px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-image: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+    .left,
+    .right {
+      display: none;
+    }
+    
+    .center {
+      width: 100%;
+    }
+  }
+  
 }

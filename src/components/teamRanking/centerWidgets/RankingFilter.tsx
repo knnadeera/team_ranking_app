@@ -11,9 +11,9 @@ const RankingFilter = ({ data, selected, onClick }: IProp) => {
   return (
     <>
       <div className="tr-ranking-filter">
-        {data.map((d, index) => (
+        {data.map((d, i) => (
           <div
-            key={index}
+            key={i}
             className={`title ${selected === d.title ? "selected" : ""}`}
             onClick={() => onClick(d.title)}
           >
