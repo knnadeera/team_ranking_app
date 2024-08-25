@@ -27,7 +27,6 @@ const TeamStatus = ({ team }: IProp) => {
         <div className="d-flex">
           <Image src={team?.logo} alt="logo" className="image-logo" />
           <div className="d-flex flex-column">
-     
             <h4 className="team-name">{team?.teamName}</h4>
             {/* <div className="team-status-comparison">
                 {team.compare > 0 ? (
@@ -44,7 +43,7 @@ const TeamStatus = ({ team }: IProp) => {
               </div> */}
           </div>
         </div>
-        <div>
+        <div className="d-flex">
           <FaTwitter className="social-media twitter" />
           <FaInstagram className="social-media instagram" />
         </div>

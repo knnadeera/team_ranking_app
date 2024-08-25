@@ -159,4 +159,9 @@
       transform: scale(1.1);
     }
   }
+
+  .player-cards {
+    display: flex;
+    overflow: auto;
+  }
 }
