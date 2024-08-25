@@ -108,9 +108,13 @@ const TeamRank = ({ rank, isOpen }: IProp) => {
           }}
         >
           <div className="bg-white py-2 px-3 border-top">
-            <div className="d-flex justify-content-between mb-2">
+            <div className="d-flex justify-content-between mb-2 player-cards">
               {rank.players.map((player, i) => (
-                <div key={i} onClick={() => playerHandler(player)} className="player-card" >
+                <div
+                  key={i}
+                  onClick={() => playerHandler(player)}
+                  className="player-card"
+                >
                   <PlayerCard player={player} />
                 </div>
               ))}
