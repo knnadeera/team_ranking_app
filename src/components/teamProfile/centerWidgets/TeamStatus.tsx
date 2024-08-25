@@ -4,6 +4,7 @@ import { ITeamRank } from "../../../utils/interfaces/teamRank.interface";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import "./teamStatus.scss";
 import moment from "moment";
+// import { BiSolidChevronDownSquare, BiSolidChevronRightSquare, BiSolidChevronUpSquare } from "react-icons/bi";
 
 interface IProp {
   team: ITeamRank;
@@ -21,21 +22,26 @@ const TeamStatus = ({ team }: IProp) => {
   };
 
   return (
-    <div className="bg-dark team-status py-2 px-3">
+    <div className="tp-team-status py-2 px-3">
       <div className="d-flex justify-content-between">
         <div className="d-flex">
-          <Image src={team?.logo} alt="logo" width={50} className="me-2" />
+          <Image src={team?.logo} alt="logo" className="image-logo" />
           <div className="d-flex flex-column">
-            <div>
-              <Image
-                src={team?.flag}
-                alt="flag"
-                width={15}
-                className="p-0 me-1"
-              />
-              {team?.country}
-            </div>
-            <h4 className="fw-bold p-0 m-0">{team?.teamName}</h4>
+     
+            <h4 className="team-name">{team?.teamName}</h4>
+            {/* <div className="team-status-comparison">
+                {team.compare > 0 ? (
+                  <BiSolidChevronUpSquare color="green" size="25" />
+                ) : team.compare < 0 ? (
+                  <BiSolidChevronDownSquare color="red" size="35" />
+                ) : (
+                  <BiSolidChevronRightSquare color="#868686" size="20" />
+                )}
+
+                <span>
+                  {team.compare}
+                </span>
+              </div> */}
           </div>
         </div>
         <div>

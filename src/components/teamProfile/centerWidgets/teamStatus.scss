@@ -1,38 +1,68 @@
-.team-status {
-  color: #919aa1;
-}
+@import "../../theme.scss";
 
-.text-color-dark {
-  color: #78828e;
-}
+.tp-team-status {
+  color: #ffffff;
+  background-color: #191c21;
 
-.team-status-border {
-  border-bottom: #48596c 1px solid;
-}
-
-.twitter {
-  background-color: #1da1f2;
-
-  &:hover {
-    background-color: #0d8bd0;
-    cursor: pointer;
+  .text-color-dark {
+    color: #ffffff;
   }
-}
 
-.instagram {
-  background-color: #f00075;
-
-  &:hover {
-    background-color: #ba005a;
-    cursor: pointer;
+  .team-name {
+    margin-left: 2rem;
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
   }
-}
 
-.social-media {
-  padding: 4px;
-  color: white;
-  border-radius: 2px;
-  margin: 0 3px;
-  font-size: x-large;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  .team-status-comparison {
+    background-color: var(--primary-orange);
+    margin-left: 2rem;
+    width: 5rem;
+    height: 4rem;
+
+    span {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 3rem;
+      margin-left: 0.2rem;
+    }
+  }
+
+  .team-status-border {
+    border-bottom: #191c21 1px solid;
+  }
+
+  .image-logo {
+    width: 7rem;
+    margin: 1rem;
+  }
+
+  .twitter {
+    background-color: #1da1f2;
+
+    &:hover {
+      background-color: #0d8bd0;
+      cursor: pointer;
+    }
+  }
+
+  .instagram {
+    background-color: #f00075;
+
+    &:hover {
+      background-color: #ba005a;
+      cursor: pointer;
+    }
+  }
+
+  .social-media {
+    padding: 4px;
+    color: white;
+    border-radius: 2px;
+    margin: 0 3px;
+    font-size: x-large;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
 }

@@ -38,7 +38,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2017-02-07",
         mapsPlayed: 45,
@@ -53,7 +55,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -68,7 +72,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -83,7 +89,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -98,7 +106,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -144,7 +154,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -159,7 +171,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -174,7 +188,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -189,7 +205,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -204,7 +222,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -250,7 +270,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -265,7 +287,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -280,7 +304,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -295,7 +321,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -310,7 +338,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -356,7 +386,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -371,7 +403,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -386,7 +420,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -401,7 +437,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -416,7 +454,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -462,7 +502,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -477,7 +519,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -492,7 +536,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -507,7 +553,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -522,7 +570,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -568,7 +618,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -583,7 +635,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -598,7 +652,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -613,7 +669,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -628,7 +686,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -674,7 +734,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -689,7 +751,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -704,7 +768,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -719,7 +785,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -734,7 +802,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -780,7 +850,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -795,7 +867,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -810,7 +884,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -825,7 +901,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -840,7 +918,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -886,7 +966,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -901,7 +983,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -916,7 +1000,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -931,7 +1017,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -946,7 +1034,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -992,7 +1082,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1007,7 +1099,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1022,7 +1116,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1037,7 +1133,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1052,7 +1150,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1098,7 +1198,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?ixlib=java-2.1.0&w=400&s=b7bcd079508c8f59cc1bdf73cfd404bc",
+        id: "7034",
         name: "Aleksib",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/FI.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1113,7 +1215,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?ixlib=java-2.1.0&w=400&s=851a2e8cd2886d5a8432be947ce28755",
+        id: "7034",
         name: "iM",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/RO.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1128,7 +1232,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?ixlib=java-2.1.0&w=400&s=e33f0eef5a3b048c1125777bf8aa72c3",
+        id: "7034",
         name: "b1t",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1143,7 +1249,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?ixlib=java-2.1.0&w=400&s=32990b70b7fadcbc772538b5fb017f75",
+        id: "7034",
         name: "jL",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/LT.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,
@@ -1158,7 +1266,9 @@ export const rankingDetails: ITeamRank[] = [
       {
         image:
           "https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?ixlib=java-2.1.0&w=400&s=07067310960a920155ce725b27969258",
+        id: "7034",
         name: "w0nderful",
+        realName: "Aleksi Virolaine",
         flag: "https://www.hltv.org/img/static/flags/30x20/UA.gif",
         joinedDate: "2015-02-07",
         mapsPlayed: 45,

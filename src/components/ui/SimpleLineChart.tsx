@@ -74,12 +74,18 @@ const SimpleLineChart = ({ chartData }: IProp) => {
           stroke="#78828e"
           vertical={false}
         />
-        <XAxis dataKey="date" interval={0} tick={<CustomizedXAxisTick />} />
+        <XAxis
+          dataKey="date"
+          interval={0} // Force ticks for every data point (each month)
+          tick={<CustomizedXAxisTick />}
+        />
         <YAxis
           tickFormatter={(value) => Math.abs(value).toString()}
           allowDecimals={false}
         />
-        <Tooltip labelFormatter={(date) => moment(date).format("MMM YYYY")} />
+        <Tooltip
+          labelFormatter={(date) => moment(date).format("MMM YYYY")} // Format tooltip labels as "Jan 2024"
+        />
         <Legend content={<CustomLegend />} />
         <Line dataKey="value" stroke="#919aa1" strokeWidth={2} dot={false} />
       </LineChart>

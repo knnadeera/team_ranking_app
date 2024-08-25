@@ -9,7 +9,7 @@ interface IProp {
   team: ITeamRank;
 }
 
-const Matches = ({ team }: IProp) => {
+const TPMatches = ({ team }: IProp) => {
   const year = moment().format("YYYY");
 
   const upcomingMatches = matches
@@ -77,4 +77,4 @@ const Matches = ({ team }: IProp) => {
   );
 };
 
-export default Matches;
+export default TPMatches;

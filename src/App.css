@@ -12,7 +12,8 @@
   margin-top: 2rem;
   background-color: #e5e7ea;
   font-family: "Calps Sans", Helvetica, Arial, sans-serif;
-
+  width: 100%;
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -46,18 +47,18 @@
 }
 
 @font-face {
-  font-family: 'Calps Sans';
-  src: local('CalpsSans'), url(./fonts/CalpsSans-Regular.ttf) format('truetype');
+  font-family: "Calps Sans";
+  src: local("CalpsSans"), url(./fonts/CalpsSans-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Calps Sans';
-    font-weight: 900;
-    src: local('CalpsSans'), url(./fonts/CalpsSans-Bold.ttf) format('truetype');
+  font-family: "Calps Sans";
+  font-weight: 900;
+  src: local("CalpsSans"), url(./fonts/CalpsSans-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Calps Sans';
-    font-weight: 900;
-    src: local('CalpsSans'), url(./fonts/CalpsSans-Black.ttf) format('truetype');
+  font-family: "Calps Sans";
+  font-weight: 900;
+  src: local("CalpsSans"), url(./fonts/CalpsSans-Black.ttf) format("truetype");
 }

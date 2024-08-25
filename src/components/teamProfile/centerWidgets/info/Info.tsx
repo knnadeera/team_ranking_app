@@ -35,7 +35,7 @@ const groupByMonth = (data: ILineChartData[]): ILineChartData[] => {
   }));
 };
 
-const Info = ({ team }: IProp) => {
+const TPInfo = ({ team }: IProp) => {
   const [group, setGroup] = React.useState<EGroup>(EGroup.MONTHLY);
   const [chartData, setChartData] = React.useState<ILineChartData[]>([]);
   const [selected, setSelected] = React.useState<EChartTabs>(EChartTabs.CORE);
@@ -53,7 +53,7 @@ const Info = ({ team }: IProp) => {
     <>
       <div>
         <div className="d-flex justify-content-between">
-          <label className="text-light-dark">Ranking development for</label>
+          <label className="text-light">Ranking development for</label>
           <div className="d-flex py-2">
             <div
               className={`text-center fw-light fs-sm mx-1 px-2 ${
@@ -81,16 +81,16 @@ const Info = ({ team }: IProp) => {
         </div>
         <div className="border border-light-dark">
           <div className="d-flex justify-content-between pt-3 px-4">
-            <div className="fw-light px-2 text-dark">
+            <div className="fw-light px-2 text-light">
               <label>Current Rank</label>
               <h6>#{team?.rank}</h6>
             </div>
             <div className="d-flex">
-              <div className="fw-light px-2 text-dark">
+              <div className="fw-light px-2 text-light">
                 <label>Peak</label>
                 <h6>#{team?.rank}</h6>
               </div>
-              <div className="fw-light px-2 text-dark">
+              <div className="fw-light px-2 text-light">
                 <label>Time at peak</label>
                 <h6>{team?.weeksInTop} Weeks</h6>
               </div>
@@ -104,4 +104,4 @@ const Info = ({ team }: IProp) => {
   );
 };
 
-export default Info;
+export default TPInfo;
